@@ -7,89 +7,104 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+  <!-- Vue.js -->
   <script src="https://kit.fontawesome.com/ef1eb56223.js" crossorigin="anonymous"></script>
-  <style>
-     *{margin: 0;}
+  <script src="res/vue@2.6.12.js"></script>
+  <style type="text/css">
+    * {
+      margin: 0;
+    }
+
     body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 15px;
+      background-color: black;
+      color: white;
     }
-  
+
     h1,
     h2,
     h3 {
-      color: #33adff;
+      color: orangered;
       font-size: 1.5rem;
     }
-#name h1{
-color: #000000;
-}
-    h4{
+
+    #name {
+      color: skyblue;
+    }
+
+    h4 {
       text-align: left;
     }
-    
+
     .sidenav {
-    height: 40%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:white;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
+      height: 40%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s
+    }
 
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
+    .sidenav a:hover,
+    .offcanvas a:focus {
+      color: #f1f1f1;
+    }
 
-.closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px !important;
-    margin-left: 50px;
-}
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px !important;
+      margin-left: 50px;
+    }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
     #name {
-      font-family:Arial, Helvetica, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
     #intro,
     #intro1 {
       text-align: center;
       font-size: 15px;
-     
+
 
     }
 
     #intro1 {
-      
+
       height: 400px;
-      background-color: #99e6ff;
-      background-image: url("/Html/Aloe.jpg");
-      font-size:15px;
+      background-color: black;
+      < !--background-image: url("/Html/Aloe.jpg");
+      -->font-size: 15px;
 
     }
 
     #download {
-      width: 300px;
+      width: 200px;
       height: 40px;
       border-radius: 15px;
       display: flex;
@@ -106,131 +121,169 @@ color: #000000;
       text-align: center;
       background-color: beige;
     }
-.btn{
-  background-color:white;
-  padding:8px 12px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.menu{
-  float: right;
-  background-color:white;
-  padding: 12px 16px;
-  cursor: pointer;
-  position:relative;
-  top:0;
-  overflow: hidden;
-  
-}
-.menu:hover{
-  background: #ddd;
-  color: black;
-}
+
+    .btn {
+      background-color: white;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .menu {
+      float: right;
+      background-color: white;
+      padding: 12px 16px;
+      cursor: pointer;
+      position: relative;
+      top: 0;
+      overflow: hidden;
+
+    }
+
+    .menu:hover {
+      background: #ddd;
+      color: black;
+    }
+
+    #container {
+      height: 300px;
+      text-align: center;
+      border-radius: 40px;
+      background-color: black;
+      color: papayawhip;
+      margin-left: 50px;
+      margin-right: 50px;
+      margin-top: 30px;
+      border-style:solid;
+      border-color: whitesmoke;
+    }
+
     #edu,
     #wak,
     #skills {
-      color: black;
+      color: ;
       text-align: center;
       text-decoration: underline;
       font-size: 1.5rem;
     }
-    #education{
+    #contact{
+      text-align: center;
+    }
+
+    #education {
       height: 300px;
       text-align: center;
-      background-color: #ffe6e6;
-      
+     
+
     }
+
     #designation {
       text-align: center;
     }
-    #work{
-     height: 350px;
+
+    #work {
+      height: 350px;
       text-align: center;
     }
-    #skill{
+
+    #skill {
       text-align: center;
       background-color: #ebf0fa;
       padding-bottom: 1.5rem;
       padding: 1rem;
+      height: 400px;
     }
 
 
     #js {
-      width: 42%;
-      height: 15px;
-      background-color: green;
+      width: 50px;
+      height: 50px;
+      background-color: indianred;
+      border-radius: 40%;
     }
 
-   
-
-    #vue {
-      width: 35%;
-      height: 15px;
-      background-color: green;
+    #css3 {
+      width: 50px;
+      height: 50px;
+      background-color: grey;
+      border-radius: 10%;
     }
 
-    #html {
-      width: 50%;
-      height: 15px;
-      background-color: green;
+    #vuejs {
+      width: 50px;
+      height: 50px;
+      background-color: skyblue;
+      border-radius: 30%;
     }
-    #java{
-      width: 38%;
-      height: 15px;
-      background-color: green;
+
+    #html5 {
+      width: 50px;
+      height: 50px;
+      background-color: coral;
+         font-size: 10px;
     }
-     #python {
-     width: 45%;
-     height: 15px;
-     background-color: green;
-     }
-    </style>
+
+    #java {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+    }
+
+    #python {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      border-radius: 50%;
+      margin: 0;
+    }
+  </style>
 </head>
 
 <body>
-  
-   <div id="intro1">
-     <div id="mySidenav" class="sidenav">
-       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#myInfo">About Me</a>
-        <a href="#contact">Contact</a>
-        <a href="#education">Education</a>
-        <a href="#skill">Skills</a>
-     </div>
-     <span style="font-size:30px;cursor:pointer" onclick="openNav()"><button class="menu"><i class="fa fa-bars"></i></button></span>
-     <br><br>
-    <marquee width=60% direction="left" scrollamout="1">
-      <h2 id="name">Hi,I'm Ian Kipkemoi.</h2>
-    </marquee>
-    <br> <br>
-    <p id="intro">Based in Nairobi.<b>Web dev,instructor & a mentor</b>.I eat,sleep and breath Vue. </p><br>
-    
-    <a href="https://facebook.com/Ian.Kip.980"><button class="btn"><i class="fa fa-facebook"></i></button></a>
-    
-    <a href="https://github.com/canzalo"> <button class="btn"><i class="fa fa-github"></i></button></a>
-  
-    <a href="https://linkedin.com/in/ian-kipkemoi-287a7a1b7"><button class="btn"><i class="fa fa-linkedin"></i></button></a
+  <div id="intro1">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#about">About Me</a>
+      <a href="#contact">Contact</a>
+      <a href=<a href="#skill">Skills</a>
+    </div>
+       <button class="menu" onclick="openNav()"><i class="fa fa-bars"></i></button></span>
+    <br><br>
+    <div id="container">
+      <marquee width=60% direction="left" scrollamout="1"> <br><br><br>
+        <h1 id="name">Hi,I'm Ian Kipkemoi.</h1>
+  </marquee>
+    <br><br><br>
+      <p id="intro">Based in Nairobi.<b>Web dev,instructor & a mentor</b>.I eat,sleep and breath Web and software development. </p><br>
+      <a href="https://facebook.com/IanKip.980"><button class="btn"><i class="fa fa-facebook"></i></button></a>
+      <a href="https://github.com/canzalo"> <button class="btn"><i class="fa fa-github"></i></button></a>
+      <a href="https://linkedin.com/in/ian-kipkemoi-287a7a1b7"><button class="btn"><i class="fa fa-linkedin"></i></button></a>
+        </div>
+    </div>
   </div>
   <br><br>
-  <div id="myInfo">
-    <section>
+  </div id="myInfo">
+    <div id="container">
       <br>
-    <h3 id="about">About Me</h3>
+      <h3 id="about">About Me</h3>
+      <br>
+      <p>Hi there! Am Ian, you might also know me as a JavaScript Developer.I've been programming for a year now as a Front-End Developer.I've worked with startups and individuals to help build and scale there businesses.Along the journey i realized my passion existed in helping people excel and pursue their dreams as upcoming developers.Hence mentoring and teaching them how to code.</p><br><br>
+    </div>
+  </div>
+  
+  <div id="contact">
+    <div id="container ">
     <br>
-    <p>Hi there! Am Ian, you might also know me as a JavaScript Developer.I've been programming for a year now as a Front-End Developer.I've worked with startups and individuals to help build and scale there businesses.Along the journey i realized my passion existed in helping people excel and pursue their dreams as upcoming developers.Hence mentoring and teaching them how to code.</p><br><br>
-    </section>
     
-    <div id="contact">
-      <br>
     <h3>Contact Details</h3>
     <br>
     Ian Kipkemoi<br> <br>Nairobi,Kenya,<br><br> +254740946810, +25470183009 <br><br> ianmutai17@gmail.com<br> <br>
-    
-    <a href="https://drive.google.com/file/d/1_gq3GswojqOY6EKPNZ1YdclLKqkR0ifR/view?usp=drivesdk"  download="Ian_Kipkemoi"> <button id="download">Download Resume</button> </a>
+    <a href="https://drive.google.com/file/d/1S4-lEcjeZ4tv2KCXjy0rnVzqs-GbIFW8/view?usp=drivesdk" download="Ian_Kipkemoi"> <button id="download">Download Resume</button> </a> <br>
     </div>
   </div>
-  <br> <br>
+
   <div id="education">
+      <div id="container">
     <br>
     <h3 id="edu"> EDUCATION</h3>
     <br>
@@ -238,47 +291,71 @@ color: #000000;
     <p><i>Diploma,Infomation Communication Technology</i><br>2018-2021 January</p><br>
     <p>Am a proclaimed self-taught Front-End Developer with knowledge in JavaScript and VueJS</p>
   </div>
-  <div id="work">
-    <section> 
-    <br>
-    <h3 id="wak">Work</h3>
-    <br>
-    <h3 id="designation">Freelancing</h3>
-    <p><i>Creating websites and teaching how to code</i><br>March 2021 - present.</p>
-    <p>Cloning all apps possible.Cloning Amazon.com,linkedin.com,Gmail.com,snapchat and many more. On my way to cloning the world! Building websites for businesses,startups and teaching how to code. </p>
   </div>
-  </section>
-  
+   <div id="container">
+    
+      <br>
+      <h3 id="wak">Work</h3>
+      <br>
+      <h3 id="designation">Freelancing</h3>
+      <p><i>Creating websites and teaching how to code</i><br>March 2021 - present.</p>
+      <p>Cloning all apps possible.Cloning Amazon.com,linkedin.com,Gmail.com,snapchat and many more. On my way to cloning the world! Building websites for businesses,startups and teaching how to code. </p>
+  </div>
+<br>
   <div id="skill">
-    <br>
-    <h3 id="skills">Skills</h3>
-    <br>
-    <p>Programming Languages proficiency</p>
-    <h4>JavaScript</h4>
-    <p id="js"></p>
-    
-    <h4>HTML&CSS</h4>
-    <p id="html"></p>
-    
-    <h4>VueJS</h4>
-    <p id="vue"></p>
-    
-      <h4>Java</h4>
-    <p id="java"></p>
-    
-    <h4>Python</h4>
-    <p id="python"></p>
+    <div id="container">
+      <br>
+      <h3 id="skills">Skills</h3>
+      <br>
+      <p><b>Programming Languages </b></p>
+      <br>
       
-   <p style="text-align:center> &copy <b> ian kipkemoi </b> </p> 
-      </div>
-    </div>
+      <button id="js">
+        <p><i class="fab fa-js"></i></p>JS
+      </button>
+      
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      
+      <button id="html5">
+        <p><i class="fab fa-html5"></i></p>HTML5
+      </button>
+      
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      
+      <button id="css3">
+        <p><i class="fab fa-css3"></i></p>CSS3
+      </button>
+      
+      <label>&nbsp;&nbsp;&nbsp;</label>
+      
+      <button id="vuejs">
+        <p> <i class="fab fa-vuejs"></i></p>VueJS
+      </button>
+      
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      
+      <button id="java">
+        <p><i class="fab fa-java"></i></p>Java
+      </button>
+      
+      <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+      
+      <button id="python">
+        <p><i class="fab fa-python"></i></p>Python
+  </button>
   </div>
-
-
-
+  </div>
+  </div>
+  </div>
+  <p style="text-align: center">&copy <b>ian kipkemoi &nbsp;. &nbsp; All rights reserved</b></p>
+  
+  
+  <div>
+   <p> <i class="fab fa-phone"></i> </p>
+  </div>
 </body>
-  <!-- Project -->
-  <script src="app.js"></script>
+<!-- Project -->
+<script src="app.js"></script>
 </body>
 
 </html>
