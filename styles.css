@@ -5,7 +5,7 @@
     }
 
     body {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: Serif;
       font-size: 15px;
       background-color: black;
       color: white;
@@ -30,6 +30,7 @@
       height: 40%;
       width: 0;
       position: fixed;
+     border: none;
       z-index: 1;
       top: 0;
       left: 0;
@@ -72,7 +73,7 @@
     }
 
     #name {
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: monospace;
     }
 
     #intro,
@@ -87,14 +88,14 @@
 
       height: 400px;
       background-color: black;
-      < !--background-image: url("/Html/Aloe.jpg");
-      -->font-size: 15px;
+     
 
     }
 
     #download {
       width: 200px;
       height: 40px;
+     border:none;
       border-radius: 15px;
       display: flex;
       background-color: dodgerblue;
@@ -113,6 +114,7 @@
 
     .btn {
       background-color: white;
+     border:none;
       padding: 8px 12px;
       cursor: pointer;
       border-radius: 5px;
@@ -120,6 +122,7 @@
 
     .menu {
       float: right;
+     border:none;
       background-color: white;
       padding: 12px 16px;
       cursor: pointer;
@@ -185,6 +188,7 @@
 
 
     #js {
+     border:none;
       width: 50px;
       height: 50px;
       background-color: indianred;
@@ -192,6 +196,7 @@
     }
 
     #css3 {
+      border:none;
       width: 50px;
       height: 50px;
       background-color: grey;
@@ -200,6 +205,7 @@
 
     #vuejs {
       width: 50px;
+      border:none;
       height: 50px;
       background-color: skyblue;
       border-radius: 30%;
@@ -207,6 +213,7 @@
 
     #html5 {
       width: 50px;
+      border:none;
       height: 50px;
       background-color: coral;
          font-size: 10px;
@@ -214,12 +221,14 @@
 
     #java {
       width: 50px;
+      border:none;
       height: 50px;
       background-color: red;
     }
 
     #python {
       width: 50px;
+      border:none;
       height: 50px;
       background-color: green;
       border-radius: 50%;
