@@ -154,7 +154,7 @@
     #edu,
     #wak,
     #skills {
-      color: ;
+      
       text-align: center;
       text-decoration: underline;
       font-size: 1.5rem;
@@ -192,9 +192,7 @@
       flex-direction:column;
       padding:10px
      }
-    #language > button{
-      flex-wrap:wrap;
-     }
+    
 
     #js {
      border:none;
