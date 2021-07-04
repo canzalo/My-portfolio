@@ -183,16 +183,18 @@
       text-align: center;
       background-color: #ebf0fa;
       padding-bottom: 1.5rem;
-      padding: 1rem;
-      height: 800px;
+      
+      
     }
 
     #language{
       display:flex;
       flex-direction:column;
-      padding:10px
+      padding:20px
      }
-    
+    #language > button{
+      margin:auto;
+     }
 
     #js {
      border:none;
