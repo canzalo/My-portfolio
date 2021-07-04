@@ -110,7 +110,7 @@
     #myInfo {
 
       text-align: center;
-      background-color: beige;
+      color: white;
     }
 
     .btn {
@@ -143,7 +143,7 @@
       text-align: center;
       border-radius: 40px;
       background-color: black;
-      color: papayawhip;
+      color: white;
       margin-left: 50px;
       margin-right: 50px;
       margin-top: 30px;
@@ -188,9 +188,9 @@
     }
 
     #language{
-      display:flex;
-      flex-direction:row;
-      padding:10px;
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
      }
     
 
