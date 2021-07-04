@@ -95,19 +95,20 @@
     #download {
       width: 200px;
       height: 40px;
-     border:none;
+      border:none;
+      text-decoration: none;
       border-radius: 15px;
       display: flex;
       background-color: dodgerblue;
       justify-content: center;
       align-items: center;
       font-size: 15px;
-      display: grid;
       margin: auto;
 
     }
 
     #myInfo {
+
       text-align: center;
       background-color: beige;
     }
